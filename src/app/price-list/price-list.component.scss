@@ -1,0 +1,65 @@
+
+.list-cont{
+  padding: 40px 0 40px 0;
+  background-color: #dbd6d6;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &>*{
+    margin-bottom: 40px;
+  }
+  .price-list-title{
+    font-size: 32px;
+    font-family: 'Chilanka', cursive;
+  }
+  .price-list-descr{
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    font-family: 'Indie Flower', cursive;
+    width: 80%;
+    text-align: center;
+  }
+  .price-list-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 85%;
+    height: auto;
+    margin-top: 7px;
+  }
+}
+.card{
+  box-shadow: 2px 7px 5px #888888;
+  background-color: #ffffff;
+  margin: 3px;
+  border-radius: 5px;
+  text-align: center;
+  width: 265px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  &>*{
+    border-bottom: 1px solid #dbd6d6;
+    margin: 13px 0 0px 0;
+    padding-bottom: 13px;
+  }
+  .none-border{
+    border: none;
+    font-family: 'Chilanka', cursive;
+    font-weight: bold;
+    font-size: 21px;
+  }
+  .card-title{
+    font-family: 'Chilanka', cursive;
+    font-size: 22px;
+  font-weight: bold;
+  }
+  .cursive-text{
+    font-family: 'Indie Flower', cursive;
+    font-size: 17px;
+  }
+}

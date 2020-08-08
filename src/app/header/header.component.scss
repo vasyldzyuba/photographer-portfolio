@@ -1,0 +1,20 @@
+.header-container{
+  height: 50px;
+  width: 100%;
+  background-color: rgba(42, 43, 43, 0.98);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .header-links{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    .link{
+      font-family: 'Indie Flower', cursive;
+      //font-weight: bold;
+      font-size: 21px;
+      color: rgba(179,179,179,0.9);
+      text-decoration: none;
+    }
+  }
+}

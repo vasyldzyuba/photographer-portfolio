@@ -1,0 +1,46 @@
+.my-works-container{
+  height: auto;
+  width: 100%;
+  padding: 40px 0 40px 0;
+  background: rgba(42, 43, 43, 0.98);
+  display: flex;
+  flex-wrap: wrap;
+  //align-items: center;
+  justify-content: center;
+
+  .works-title{
+    font-family: 'Chilanka', cursive;
+    width: 100%;
+    font-size: 32px;
+    color: rgba(179, 179, 179, 0.9);
+    //font-weight: bold;
+    text-align: center;
+  }
+  .albums-list{
+    color: rgba(179, 179, 179, 0.9);
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    font-family: 'Indie Flower', cursive;
+    justify-content: space-evenly;
+    display: flex;
+    width: 40%;
+  }
+  .works-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    height: auto;
+    margin-top: 7px;
+    img{
+      margin-bottom: 10px;
+      width: 260px;
+      height: auto;
+      display: block;
+    }
+  }
+}
+.my-works-container > *{
+  margin: 30px 10px;
+}
