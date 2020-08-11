@@ -15,17 +15,18 @@ export class MyWorksComponent implements OnInit {
   ngOnInit() {
     this.galleryOptions = [
       {
-        width: '600px',
-        height: '400px',
-        thumbnailsColumns: 4,
-        imageAnimation: NgxGalleryAnimation.Slide
+        width: '800px',
+        height: '600px',
+        thumbnailsColumns: 5,
+        imageAnimation: NgxGalleryAnimation.Zoom,
+        imageSwipe: true
       },
       // max-width 800
       {
         breakpoint: 800,
         width: '100%',
         height: '600px',
-        imagePercent: 80,
+        imagePercent: 100,
         thumbnailsPercent: 20,
         thumbnailsMargin: 20,
         thumbnailMargin: 20
@@ -33,7 +34,9 @@ export class MyWorksComponent implements OnInit {
       // max-width 400
       {
         breakpoint: 400,
-        preview: false
+        previewKeyboardNavigation: true,
+        previewAnimation: true,
+        previewSwipe: true
       }
     ];
 

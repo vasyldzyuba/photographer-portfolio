@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { MyWorksComponent } from './my-works/my-works.component';
 import { PriceListComponent } from './price-list/price-list.component';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { AdminComponent } from './admin/admin.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { NgxGalleryModule } from '@kolkov/ngx-gallery';
     HeaderImageComponent,
     AboutComponent,
     MyWorksComponent,
-    PriceListComponent
+    PriceListComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
