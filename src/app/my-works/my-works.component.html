@@ -1,25 +1,17 @@
 <div class="my-works-container">
   <div class="works-title"><span>Мої Роботи</span></div>
   <div class="albums-list">
-    <span>Весілля</span>
-    <span>Портрет</span>
-    <span>Love Story</span>
-    <span>Сім'я</span>
+<!--<span *ngFor="let workType of filteredItems; let i = index">{{workType.workType}}</span>-->
+<!--    <div *ngFor="let category of categories; let i = index;">-->
+      <button *ngFor="let category of categories; let i = index;" type="button" (click)="filterItemsByCategory(category)">{{ category.category }}</button>
+<!--    </div>-->
+    <button type="button" (click)="reset()" class="btn-o">Reset</button>
   </div>
   <div class="works-images">
-    <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
-<!--    <img src="assets/images/wed.jpg" alt="">-->
+<!--    <div *ngFor="let item of filteredItems; let i = index;">-->
+      <img *ngFor="let item of filteredItems; let i = index;" [src]="item.thumb" (click)="open(i)" />
+<!--    </div>-->
   </div>
 </div>
+
 
