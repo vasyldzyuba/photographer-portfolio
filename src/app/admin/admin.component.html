@@ -1,0 +1,17 @@
+<div class="main-cont">
+  <p class="title-admin">Адмін Панель</p>
+  <input type="text" class="album-name" [(ngModel)]="albumName" placeholder="Назва Альбому">
+  <input type="file" multiple (change)="detectFiles($event)">
+  <div class="my-works-container">
+    <div class="works-title"><span>Моя Нова Фотосєсія</span></div>
+    <div class="albums-list">
+      <span>{{albumName}}</span>
+    </div>
+    <div class="works-images">
+      <img *ngFor="let url of urls" [src]="url">
+    </div>
+
+  </div>
+
+
+</div>
